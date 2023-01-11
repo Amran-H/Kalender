@@ -23,7 +23,7 @@ const Happens = () => {
   }, [imageChange]);
 
   return (
-    <section className="my-10 lg:w-4/5 mx-auto">
+    <section className="my-10">
       <h1 className="text-4xl px-10 text-center lg:text-4xl text-cyan-900 font-bold  lg:w-3/5 mx-auto">
         Scheduling automation happens before and after meetings
       </h1>
