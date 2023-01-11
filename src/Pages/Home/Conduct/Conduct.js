@@ -5,8 +5,8 @@ import "animate.css";
 const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
-    <section className="lg:w-4/5 mx-auto mt-10">
-      <div className="flex  text-xl font-bold border-b-4 border-gray-100 overflow-x-auto">
+    <section className=" mt-10">
+      <div className="flex  text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
           className={`px-10 ${
