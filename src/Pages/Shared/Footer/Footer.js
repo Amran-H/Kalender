@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="list-none">
           <h3 className="my-6 text-xl font-bold text-black">About</h3>
           <li className="my-5">
-            <a href="/#">About Calendly</a>
+            <a href="/#">About Kalender</a>
           </li>
           <li className="my-5">
             <a href="/#">Contact Us</a>
@@ -74,7 +74,7 @@ const Footer = () => {
             Popular Features
           </h3>
           <li className="my-5">
-            <a href="#">Embed Calendly</a>
+            <a href="#">Embed Kalender</a>
           </li>
           <li className="my-5">
             <a href="#">Availability</a>
@@ -83,7 +83,7 @@ const Footer = () => {
             <a href="#">Sending Notifications</a>
           </li>
           <li className="my-5">
-            <a href="#">Using Calendly</a>
+            <a href="#">Using Kalender</a>
           </li>
         </div>
         <div className="list-none">
