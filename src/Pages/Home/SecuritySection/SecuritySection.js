@@ -3,7 +3,7 @@ import { TiTick } from "react-icons/ti";
 
 const SecuritySection = () => {
   return (
-    <div className="flex my-20 mx-auto justify-center items-center">
+    <div className="grid md:grid-cols-2 grid-cols-1  mx-5 my-20 md:mx-auto justify-center items-center">
       <div>
         <img
           className="w-2/3"
