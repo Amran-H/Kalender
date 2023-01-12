@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import image1 from "../../../images/Calendly-Sales-Small-new.webp";
+import image1 from "../../../assets/images/Calendly-Sales-Small-new.webp";
 import "animate.css";
 
 const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
-    <section className=" mt-10">
+    <section className="mt-10">
       <div className="flex justify-between text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
@@ -16,7 +16,7 @@ const Conduct = () => {
         </p>
         <p
           onClick={() => setItem(2)}
-          className={`px-10 ${item === 2 ? "border-b-4 border-cyan-400 pb-10" : ""
+          className={`px-10 ${item === 2 ? "border-b-4   border-cyan-400 pb-10" : ""
             }`}
         >
           <p className="cursor-pointer">Marketing</p>

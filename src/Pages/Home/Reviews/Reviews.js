@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../../../images/review.jpg"
+import img from "../../../assets/images/review.jpg"
 import { FaArrowRight } from "react-icons/fa";
 
 const Reviews = () => {
