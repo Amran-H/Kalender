@@ -40,7 +40,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <Link className="btn btn-ghost normal-case text-4xl">Kalender</Link>
+                <Link className="btn btn-ghost normal-case md:text-4xl text-xl">Kalender</Link>
             </div>
 
             {/* Big Screen */}
@@ -77,8 +77,8 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
 
-                <Link className="mr-4 hover:text-blue-600 font-bold">Log In</Link>
-                <Link className="btn btn-primary">Get started</Link>
+                <Link className="md:mr-4 mr-3 hover:text-blue-600 font-bold">Log In</Link>
+                <Link className="btn btn-primary ">Get started</Link>
             </div>
         </div>
     );

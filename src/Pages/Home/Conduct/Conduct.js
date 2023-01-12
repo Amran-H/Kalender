@@ -6,52 +6,46 @@ const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
     <section className=" mt-10">
-      <div className="flex  text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
+      <div className="flex justify-between text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
-          className={`px-10 ${
-            item === 1 ? "border-b-4 border-cyan-400 pb-10" : ""
-          }`}
+          className={`px-10 ${item === 1 ? "border-b-4 border-cyan-400 pb-10" : ""
+            }`}
         >
           Sales
         </p>
         <p
           onClick={() => setItem(2)}
-          className={`px-10 ${
-            item === 2 ? "border-b-4 border-cyan-400 pb-10" : ""
-          }`}
+          className={`px-10 ${item === 2 ? "border-b-4 border-cyan-400 pb-10" : ""
+            }`}
         >
           Marketing
         </p>
         <p
           onClick={() => setItem(3)}
-          className={`px-10 ${
-            item === 3 ? "border-b-4 border-cyan-400 pb-10" : ""
-          }`}
+          className={`px-10 ${item === 3 ? "border-b-4 border-cyan-400 pb-10" : ""
+            }`}
         >
           Customer Success
         </p>
         <p
           onClick={() => setItem(4)}
-          className={`px-10 ${
-            item === 4 ? "border-b-4 border-cyan-400 pb-10" : ""
-          }`}
+          className={`px-10 ${item === 4 ? "border-b-4 border-cyan-400 pb-10" : ""
+            }`}
         >
           Recruiting
         </p>
         <p
           onClick={() => setItem(5)}
-          className={`px-10 ${
-            item === 5 ? "border-b-4 border-cyan-400 pb-10" : ""
-          }`}
+          className={`px-10 ${item === 5 ? "border-b-4 border-cyan-400 pb-10" : ""
+            }`}
         >
           Information Technology
         </p>
         <p
           onClick={() => setItem(6)}
-          className={`px-10 ${
-            item === 6 ? "border-b-4 border-cyan-400 pb-10" : ""
-          }`}
+          className={`px-10 ${item === 6 ? "border-b-4 border-cyan-400 pb-10" : ""
+            }`}
         >
           Education
         </p>
