@@ -6,7 +6,7 @@ const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
     <section className=" mt-10">
-      <div className="flex text-lg  lg:text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
+      <div className="flex justify-between text-lg  lg:text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
           className={`px-10 cursor-pointer ${
