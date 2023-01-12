@@ -17,7 +17,7 @@ const Integrations = () => {
         </button>
       </div>
       <div className="lg:w-3/5 ">
-        <img className="h-96 lg:h-[580px] " src={image} alt="" />
+        <img className="w-full" src={image} alt="" />
       </div>
     </div>
   );
