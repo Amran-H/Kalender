@@ -44,7 +44,7 @@ const Client = () => {
 
     const logosArr2 = [
         {
-            name: 'etihad',
+            name: 'etihad airlines',
             image: etihadImg
         },
         {
