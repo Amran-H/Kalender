@@ -24,7 +24,7 @@ const Happens = () => {
 
   return (
     <section className="my-10 lg:w-4/5 mx-auto">
-      <h1 className="text-4xl px-10 text-center lg:text-4xl text-cyan-900 font-bold  lg:w-3/5 mx-auto">
+      <h1 className="text-4xl px-10 text-center lg:text-4xl text-cyan-900 font-bold lg:w-3/5 mx-auto">
         Scheduling automation happens before and after meetings
       </h1>
       <div className="hidden lg:flex text-left mt-20 mb-10">
