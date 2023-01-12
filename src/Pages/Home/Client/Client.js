@@ -56,6 +56,10 @@ const Client = () => {
             image: pepsiImg
         },
         {
+            name: 'ziggo',
+            image: ziggoImg
+        },
+        {
             name: 'starbucks',
             image: starbucksImg
         },
@@ -63,17 +67,12 @@ const Client = () => {
             name: 'uniliver',
             image: uniliverImg
         },
-        {
-            name: 'ziggo',
-            image: ziggoImg
-        },
     ]
 
 
     return (
         <section className='my-10'>
-        <h3 className='text-4xl px-10 py-12 text-center lg:text-4xl text-cyan-900 font-bold  lg:w-3/5 mx-auto'>More than 10,000,000 users worldwide are using our platform for scheduling</h3>
-        <Marquee direction='left' speed={50} pauseOnHover>
+        <Marquee direction='right' speed={50} pauseOnHover>
             {
                 logosArr1.map(logo => 
                     <div className='w-60'>
@@ -82,7 +81,7 @@ const Client = () => {
             }
         </Marquee>
 
-        <Marquee direction='right' speed={50} pauseOnHover>
+        <Marquee direction='left' speed={50} pauseOnHover>
             {
                 logosArr2.map(logo => 
                     <div className='w-60'>
