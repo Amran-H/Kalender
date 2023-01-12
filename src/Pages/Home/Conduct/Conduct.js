@@ -5,15 +5,15 @@ import "animate.css";
 const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
-    <section className="lg:w-4/5 mx-auto mt-10">
-      <div className="flex  text-xl font-bold border-b-4 border-gray-100 overflow-x-auto">
+    <section className=" mt-10">
+      <div className="flex justify-between text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
           className={`px-10 ${
             item === 1 ? "border-b-4 border-cyan-400 pb-10" : ""
           }`}
         >
-          Sales
+          <p className="cursor-pointer">Sales</p>
         </p>
         <p
           onClick={() => setItem(2)}
@@ -21,7 +21,7 @@ const Conduct = () => {
             item === 2 ? "border-b-4 border-cyan-400 pb-10" : ""
           }`}
         >
-          Marketing
+          <p className="cursor-pointer">Marketing</p>
         </p>
         <p
           onClick={() => setItem(3)}
@@ -29,7 +29,7 @@ const Conduct = () => {
             item === 3 ? "border-b-4 border-cyan-400 pb-10" : ""
           }`}
         >
-          Customer Success
+          <p className="cursor-pointer">Customer Success</p>
         </p>
         <p
           onClick={() => setItem(4)}
@@ -37,7 +37,7 @@ const Conduct = () => {
             item === 4 ? "border-b-4 border-cyan-400 pb-10" : ""
           }`}
         >
-          Recruiting
+          <p className="cursor-pointer">Recruiting</p>
         </p>
         <p
           onClick={() => setItem(5)}
@@ -45,7 +45,7 @@ const Conduct = () => {
             item === 5 ? "border-b-4 border-cyan-400 pb-10" : ""
           }`}
         >
-          Information Technology
+          <p className="cursor-pointer"> Information Technology </p>
         </p>
         <p
           onClick={() => setItem(6)}
@@ -53,7 +53,7 @@ const Conduct = () => {
             item === 6 ? "border-b-4 border-cyan-400 pb-10" : ""
           }`}
         >
-          Education
+          <p className="cursor-pointer">Education</p>
         </p>
       </div>
       {/* Card section */}

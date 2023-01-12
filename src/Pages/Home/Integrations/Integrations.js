@@ -3,7 +3,7 @@ import image from "../../../images/Integrations-Calendly__1_.webp";
 
 const Integrations = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:w-4/5 mx-auto lg:h-[620px] bg-gray-100 px-10">
+    <div className="flex flex-col lg:flex-row items-center lg:h-[620px] bg-gray-100 px-10">
       <div className="text-left lg:w-2/5">
         <h1 className="text-5xl font-bold text-cyan-900 lg:mb-14 my-8">
           Integrations and <br /> Extensions
