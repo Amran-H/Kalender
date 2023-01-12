@@ -6,6 +6,12 @@ import ayreImg from '../../../assets/client_logos/ayre.svg';
 import britishCouncilImg from '../../../assets/client_logos/british-council.svg';
 import cheetosImg from '../../../assets/client_logos/cheetos.svg';
 import crocsImg from '../../../assets/client_logos/crocs.svg';
+import etihadImg from '../../../assets/client_logos/etihad.svg';
+import nikeImg from '../../../assets/client_logos/nike.svg';
+import starbucksImg from '../../../assets/client_logos/starbucks.svg';
+import pepsiImg from '../../../assets/client_logos/pepsi.svg';
+import uniliverImg from '../../../assets/client_logos/uniliver.svg';
+import ziggoImg from '../../../assets/client_logos/ziggo.svg';
 
 const Client = () => {
  
@@ -38,28 +44,28 @@ const Client = () => {
 
     const logosArr2 = [
         {
-            name: 'air canada',
-            image: airCanadaImg
+            name: 'etihad',
+            image: etihadImg
         },
         {
-            name: 'mastercard',
-            image: mastercardImg
+            name: 'nike',
+            image: nikeImg
         },
         {
-            name: 'ayre',
-            image: ayreImg
+            name: 'pepsi',
+            image: pepsiImg
         },
         {
-            name: 'brtish council',
-            image: britishCouncilImg
+            name: 'starbucks',
+            image: starbucksImg
         },
         {
-            name: 'cheetos',
-            image: cheetosImg
+            name: 'uniliver',
+            image: uniliverImg
         },
         {
-            name: 'crocs',
-            image: crocsImg
+            name: 'ziggo',
+            image: ziggoImg
         },
     ]
 
@@ -78,7 +84,7 @@ const Client = () => {
 
         <Marquee direction='right' speed={50} pauseOnHover>
             {
-                logosArr1.map(logo => 
+                logosArr2.map(logo => 
                     <div className='w-60'>
                         <img className='w-4/6' src={logo.image} alt="" />
                     </div>)
