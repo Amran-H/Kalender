@@ -1,4 +1,5 @@
 import React from "react";
+import Client from "../Client/Client";
 import Conduct from "../Conduct/Conduct";
 import Header from "../Header/Header";
 import Integrations from "../Integrations/Integrations";
@@ -12,6 +13,7 @@ const Home = () => {
       <Header />
       <Conduct />
       <Reviews />
+      <Client />
       <Happens />
       <Integrations />
       <SecuritySection />
