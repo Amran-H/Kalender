@@ -1,9 +1,9 @@
 import React from "react";
-import image from "../../../images/Integrations-Calendly__1_.webp";
+import image from "../../../assets/images/Integrations-Calendly__1_.webp";
 
 const Integrations = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:h-[620px] bg-gray-100 px-10">
+    <div className="flex flex-col lg:flex-row items-center lg:h-[620px] bg-gray-100 px-10 mx-5">
       <div className="text-left lg:w-2/5">
         <h1 className="text-5xl font-bold text-cyan-900 lg:mb-14 my-8">
           Integrations and <br /> Extensions
@@ -17,7 +17,7 @@ const Integrations = () => {
         </button>
       </div>
       <div className="lg:w-3/5 ">
-        <img className="h-96 lg:h-[580px] " src={image} alt="" />
+        <img className="w-full" src={image} alt="" />
       </div>
     </div>
   );

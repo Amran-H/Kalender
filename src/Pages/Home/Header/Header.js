@@ -3,7 +3,7 @@ import { TfiAlarmClock } from "react-icons/tfi";
 
 const Header = () => {
   return (
-    <div className="mx-20">
+    <div className="">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
@@ -25,7 +25,7 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col items-center md:flex-row">
-              <span className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline bg-emerald-400 focus:outline-none text-white">
+              <span className="cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline bg-emerald-400 focus:outline-none text-white">
                 Make Your Schedule
                 <p className="text-2xl mx-2">
                   <TfiAlarmClock></TfiAlarmClock>
