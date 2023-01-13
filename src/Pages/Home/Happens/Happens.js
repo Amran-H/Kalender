@@ -26,7 +26,7 @@ const Happens = () => {
     <div>
       <section className="my-10 lg:w-4/5 mx-auto">
         <section className="my-10">
-          <h1 className="text-4xl px-10 text-center lg:text-4xl text-cyan-900 font-bold  lg:w-3/5 mx-auto">
+          <h1 className="text-4xl px-10 text-center lg:text-4xl text-cyan-900 font-bold  lg:w-4/5 mx-auto">
             Scheduling automation happens before and after meetings
           </h1>
           <div className="hidden lg:flex text-left mt-20 mb-10">
@@ -35,7 +35,7 @@ const Happens = () => {
                 {imageChange === 1 && (
                   <img
                     className="h-[600px] p-8"
-                    src={image1}
+                    src="https://images.unsplash.com/photo-1673448269645-34f8260049d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt=""
                     srcset=""
                   />
@@ -45,7 +45,7 @@ const Happens = () => {
                 {imageChange === 2 && (
                   <img
                     className="h-[600px] p-8"
-                    src={image2}
+                    src="https://images.unsplash.com/photo-1673212815620-62e1f1824a5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt=""
                     srcset=""
                   />
@@ -55,7 +55,7 @@ const Happens = () => {
                 {imageChange === 3 && (
                   <img
                     className="h-[600px] p-8"
-                    src={image3}
+                    src="https://images.unsplash.com/photo-1673372267880-bc6914e446cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt=""
                     srcset=""
                   />
@@ -65,7 +65,7 @@ const Happens = () => {
                 {imageChange === 4 && (
                   <img
                     className="h-[600px] p-8"
-                    src={image4}
+                    src="https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=398&q=80"
                     alt=""
                     srcset=""
                   />
@@ -117,7 +117,12 @@ const Happens = () => {
               >
                 Let People schedule meeting on your website
               </button>
-              <img className=" p-8" src={image1} alt="" srcset="" />
+              <img
+                className=" p-8"
+                src="https://images.unsplash.com/photo-1673448269645-34f8260049d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+                srcset=""
+              />
             </div>
             <div>
               <button
@@ -125,7 +130,12 @@ const Happens = () => {
               >
                 Screen people before they can book with you
               </button>
-              <img className=" p-8" src={image2} alt="" srcset="" />
+              <img
+                className=" p-8"
+                src="https://images.unsplash.com/photo-1673212815620-62e1f1824a5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+                srcset=""
+              />
             </div>
             <div>
               <button
@@ -133,7 +143,12 @@ const Happens = () => {
               >
                 Automatically move a deal along with helpful content
               </button>
-              <img className=" p-8" src={image3} alt="" srcset="" />
+              <img
+                className=" p-8"
+                src="https://images.unsplash.com/photo-1673372267880-bc6914e446cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+                srcset=""
+              />
             </div>
             <div>
               <button
@@ -141,7 +156,12 @@ const Happens = () => {
               >
                 Make people reconfirm meeting with you
               </button>
-              <img className=" p-8" src={image4} alt="" srcset="" />
+              <img
+                className=" p-8"
+                src="https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=398&q=80"
+                alt=""
+                srcset=""
+              />
             </div>
           </div>
         </section>

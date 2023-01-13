@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import image1 from "../../../images/Calendly-Sales-Small-new.webp";
 import "animate.css";
 
 const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
     <section className=" mt-10">
-      <div className="flex justify-between text-lg  lg:text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
+      <div className=" text-lg  lg:text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <div className="flex justify-between text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
           <p
             onClick={() => setItem(1)}
@@ -92,7 +91,10 @@ const Conduct = () => {
                   </button>
                 </div>
                 <div className="px-10 lg:w-1/2">
-                  <img src={image1} alt="" />
+                  <img
+                    src="https://images.unsplash.com/photo-1671726805768-575f88de945a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt=""
+                  />
                 </div>
               </div>
             )}
@@ -134,7 +136,7 @@ const Conduct = () => {
                 </div>
                 <div className="px-10 lg:w-1/2">
                   <img
-                    src="https://images.ctfassets.net/k0lk9kiuza3o/6MaOVZrhlUGMwh5xszyWl8/2aaeec70d4e44490f150e28ea21d3165/Calendly-Demand-Gen-Small.png?w=1141&h=937&q=50&fm=webp"
+                    src="https://images.unsplash.com/photo-1673543546762-c89d17efe580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt=""
                   />
                 </div>
@@ -175,7 +177,7 @@ const Conduct = () => {
                 </div>
                 <div className="px-10 lg:w-1/2">
                   <img
-                    src="https://images.ctfassets.net/k0lk9kiuza3o/47xznwNRRuHE6gx1VSbhee/2f9ad09c15c55a4a252239f2e915c459/Calendly-Customer-Success.png?w=1141&h=939&q=50&fm=webp"
+                    src="https://images.unsplash.com/photo-1673427147403-9e87c4fe8a26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"
                     alt=""
                   />
                 </div>
@@ -220,7 +222,7 @@ const Conduct = () => {
                 </div>
                 <div className="px-10 lg:w-1/2">
                   <img
-                    src="https://images.ctfassets.net/k0lk9kiuza3o/1kDKK7sXKlgYglms0bWvmh/832a633866ff496a90261876f026d5fd/Calendly-Recruiting-Small.png?w=1140&h=930&q=50&fm=webp"
+                    src="https://images.unsplash.com/photo-1673537226602-3d8ac6bc8dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
                     alt=""
                   />
                 </div>
@@ -265,7 +267,7 @@ const Conduct = () => {
                 </div>
                 <div className="px-10 lg:w-1/2">
                   <img
-                    src="https://images.ctfassets.net/k0lk9kiuza3o/2Vw1fqn2KMdFMULRX84jgx/bcee83879a5d189867d98689b0088d0d/Calendly-IT_Small__3.png?w=1920&h=1578&q=50&fm=webp"
+                    src="https://images.unsplash.com/photo-1673535688014-0f88b19eae2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
                     alt=""
                   />
                 </div>
@@ -306,7 +308,7 @@ const Conduct = () => {
                 </div>
                 <div className="px-10 lg:w-1/2">
                   <img
-                    src="https://images.ctfassets.net/k0lk9kiuza3o/1nFkpdx4ok8zrMu4ZCkIxV/2d9761a58b2d846458fa27797dc2ecee/Calendly-Education.png?w=1140&h=932&q=50&fm=webp"
+                    src="https://images.unsplash.com/photo-1673537191345-e6309d6e68e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt=""
                   />
                 </div>
