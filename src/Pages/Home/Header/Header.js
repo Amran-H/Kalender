@@ -13,7 +13,7 @@ const Header = () => {
                 src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
                 alt=""
               />
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-cyan-900 sm:text-4xl sm:leading-none">
                 Book Your Schedule
                 <br className="hidden md:block" />
                 With in 2 Minute

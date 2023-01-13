@@ -18,7 +18,7 @@ const Reviews = () => {
           />
         </div>
         <div className="md:w-1/2">
-          <h1 className="text-3xl md:text-5xl font-bold">
+          <h1 className="text-3xl md:text-4xl text-cyan-900 font-bold">
             Kalendar is one of the best scheduling app ever crossed my path.
           </h1>
           <p className="py-6">
@@ -26,7 +26,7 @@ const Reviews = () => {
             maiores tenetur incidunt labore at tempore recusandae. Minus tempora
             dicta maiores?
           </p>
-          <p className="text-black flex items-center gap-3 text-xl p-0">
+          <p className="text-emerald-500 flex items-center gap-3 text-xl p-0">
             Read More <FaArrowRight />
           </p>
         </div>
