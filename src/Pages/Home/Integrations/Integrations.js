@@ -12,12 +12,16 @@ const Integrations = () => {
           Boost productivity with integrations that fold right into your
           workflow.
         </p>
-        <button className="bg-sky-600 border-none px-5 py-3 text-xl font-bold text-white hover:bg-sky-700 rounded-lg mb-10">
+        <button className="bg-emerald-500 border-none px-5 py-3 text-xl font-bold text-white hover:bg-emerald-700 rounded-lg mb-10">
           Explore integrations
         </button>
       </div>
       <div className="lg:w-3/5 ">
-        <img className="w-full" src={image} alt="" />
+        <img
+          className="w-full rounded-xl"
+          src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+        />
       </div>
     </div>
   );

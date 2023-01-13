@@ -73,7 +73,7 @@ const Happens = () => {
               </div>
             </div>
 
-            <div className="w-2/6 border-l-4 border-indigo-600">
+            <div className="w-2/6 border-l-4 border-emerald-400">
               <button
                 onClick={() => setImageChange(1)}
                 className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${

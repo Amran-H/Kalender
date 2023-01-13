@@ -5,7 +5,7 @@ import "animate.css";
 const Conduct = () => {
   const [item, setItem] = useState(1);
   return (
-    <section className=" mt-10">
+    <section className="mt-10">
       <div className="flex justify-between text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
@@ -18,7 +18,7 @@ const Conduct = () => {
         <p
           onClick={() => setItem(2)}
           className={`px-10 ${
-            item === 2 ? "border-b-4 border-cyan-400 pb-10" : ""
+            item === 2 ? "border-b-4   border-cyan-400 pb-10" : ""
           }`}
         >
           <p className="cursor-pointer">Marketing</p>
@@ -86,7 +86,7 @@ const Conduct = () => {
                     tasks to focus on selling.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -127,7 +127,7 @@ const Conduct = () => {
                     follow-up workflows.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -168,7 +168,7 @@ const Conduct = () => {
                     competitive advantage.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -213,7 +213,7 @@ const Conduct = () => {
                     identify success metrics to achieve greater value, faster.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -258,7 +258,7 @@ const Conduct = () => {
                     your students, so they can succeed.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -299,7 +299,7 @@ const Conduct = () => {
                     tasks to focus on selling.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
