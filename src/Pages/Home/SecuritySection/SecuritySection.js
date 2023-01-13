@@ -10,7 +10,7 @@ const SecuritySection = () => {
         alt=""
       />
       <div className="lg:w-3/4">
-        <h1 className="text-4xl mb-5 font-bold">
+        <h1 className="text-4xl text-cyan-900 mb-5 font-bold">
           Make your IT team feel secure and safe
         </h1>
         <div>
