@@ -85,7 +85,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className=" normal-case md:text-4xl text-xl">
+        <Link to="/" className="text-emerald-400 font-bold normal-case md:text-4xl text-xl">
           Kalender
         </Link>
       </div>
@@ -160,7 +160,7 @@ const Navbar = () => {
         >
           Log In
         </Link>
-        <Link className="btn btn-primary ">Get started</Link>
+        <Link className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
       </div>
     </div>
   );

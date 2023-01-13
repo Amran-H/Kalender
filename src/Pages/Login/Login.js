@@ -41,10 +41,10 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-0">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn border-none bg-emerald-400 hover:bg-emerald-600">Login</button>
             </div>
             <p className="text-center">Or</p>
-              <button className="btn btn-outline btn-primary"><FcGoogle /> <span className="ml-2">Sign up with Google</span> </button>
+            <button className="btn btn-outline btn-primary"><FcGoogle /> <span className="ml-2">Sign up with Google</span> </button>
           </form>
           <p className="text-center">
             New in Kalender?
