@@ -5,9 +5,9 @@ const Footer = () => {
     <section className="flex flex-col lg:flex-row text-left mt-10 mx-5">
       <div className="w-full lg:w-2/5">
         <div className="w-full lg:w-4/5">
-          <h1 className="text-5xl font-bold text-cyan-900">
+          <h1 className="text-5xl font-bold text-black">
             Easy <br />
-            <span className="text-cyan-500"> ahead </span>
+            <span className="text-emerald-500"> ahead </span>
           </h1>
           <p className="text-base lg:text-xl my-10 text-gray-500">
             We take the work out of connecting with others so you can accomplish

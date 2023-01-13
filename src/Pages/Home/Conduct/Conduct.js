@@ -9,43 +9,49 @@ const Conduct = () => {
       <div className="flex justify-between text-xl font-bold border-b-4 border-gray-100 overflow-x-auto lg:overflow-hidden">
         <p
           onClick={() => setItem(1)}
-          className={`px-10 ${item === 1 ? "border-b-4 border-cyan-400 pb-10" : ""
-            }`}
+          className={`px-10 ${
+            item === 1 ? "border-b-4 border-cyan-400 pb-10" : ""
+          }`}
         >
           <p className="cursor-pointer">Sales</p>
         </p>
         <p
           onClick={() => setItem(2)}
-          className={`px-10 ${item === 2 ? "border-b-4   border-cyan-400 pb-10" : ""
-            }`}
+          className={`px-10 ${
+            item === 2 ? "border-b-4   border-cyan-400 pb-10" : ""
+          }`}
         >
           <p className="cursor-pointer">Marketing</p>
         </p>
         <p
           onClick={() => setItem(3)}
-          className={`px-10 ${item === 3 ? "border-b-4 border-cyan-400 pb-10" : ""
-            }`}
+          className={`px-10 ${
+            item === 3 ? "border-b-4 border-cyan-400 pb-10" : ""
+          }`}
         >
           <p className="cursor-pointer">Customer Success</p>
         </p>
         <p
           onClick={() => setItem(4)}
-          className={`px-10 ${item === 4 ? "border-b-4 border-cyan-400 pb-10" : ""
-            }`}
+          className={`px-10 ${
+            item === 4 ? "border-b-4 border-cyan-400 pb-10" : ""
+          }`}
         >
           <p className="cursor-pointer">Recruiting</p>
         </p>
         <p
           onClick={() => setItem(5)}
-          className={`px-10 ${item === 5 ? "border-b-4 border-cyan-400 pb-10" : ""
-            }`}
+          className={`px-10 ${
+            item === 5 ? "border-b-4 border-cyan-400 pb-10" : ""
+          }`}
         >
           <p className="cursor-pointer"> Information Technology </p>
         </p>
         <p
           onClick={() => setItem(6)}
-          className={`px-10 ${item === 6 ? "border-b-4 border-cyan-400 pb-10" : ""
-            }`}
+          className={`px-10 ${
+            item === 6 ? "border-b-4 border-cyan-400 pb-10" : ""
+          }`}
         >
           <p className="cursor-pointer">Education</p>
         </p>
@@ -80,7 +86,7 @@ const Conduct = () => {
                     tasks to focus on selling.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -121,7 +127,7 @@ const Conduct = () => {
                     follow-up workflows.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -162,7 +168,7 @@ const Conduct = () => {
                     competitive advantage.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -207,7 +213,7 @@ const Conduct = () => {
                     identify success metrics to achieve greater value, faster.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -252,7 +258,7 @@ const Conduct = () => {
                     your students, so they can succeed.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
@@ -293,7 +299,7 @@ const Conduct = () => {
                     tasks to focus on selling.
                   </p>
                 </div>
-                <button className="btn-link text-xl decoration-neutral-content font-semibold">
+                <button className="text-emerald-500 text-xl decoration-neutral-content font-semibold">
                   Learn more
                 </button>
               </div>
