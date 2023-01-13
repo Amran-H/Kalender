@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image1 from "../../../images/Calendly-Sales-Small-new.webp";
+import image1 from "../../../assets/images/Calendly-Sales-Small-new.webp";
 import "animate.css";
 
 const Conduct = () => {

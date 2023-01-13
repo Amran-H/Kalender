@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../images/review.jpg";
+import img1 from "../../../assets/images/review.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Reviews = () => {
@@ -8,7 +8,7 @@ const Reviews = () => {
       <div className="hero-content md:h-screen flex-col lg:flex-row">
         <div className="md:w-1/2 grid place-content-center">
           <img
-            src={img}
+            src={img1}
             style={{
               clipPath:
                 "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)",
