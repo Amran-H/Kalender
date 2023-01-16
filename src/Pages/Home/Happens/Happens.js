@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from "react";
-import image1 from "../../../images/Calendly-Demand-Gen-2__1_.webp";
-import image2 from "../../../images/Calendly-Reminders-2.webp";
-import image3 from "../../../images/Calendly-Route-Customers-Sales-team.webp";
-import image4 from "../../../images/Calendly-Teams-Workflows__1_.webp";
 
 const Happens = () => {
   const [imageChange, setImageChange] = useState(1);
