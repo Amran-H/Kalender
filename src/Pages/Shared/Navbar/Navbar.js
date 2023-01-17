@@ -27,15 +27,15 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-bold"
           >
             <li>
-              <Link>Individuals</Link>
+              <Link>Individual</Link>
             </li>
             <li>
-              <Link>Teams</Link>
+              <Link>Group Session</Link>
             </li>
             <li>
-              <Link>Enterprise</Link>
+              <Link>Pricing</Link>
             </li>
-            <li tabIndex={0}>
+            {/* <li tabIndex={0}>
               <Link className="justify-between">
                 Parent
                 <svg
@@ -56,12 +56,12 @@ const Navbar = () => {
                   <Link>Submenu 2</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link>Pricing</Link>
             </li>
 
-            <li tabIndex={0}>
+            {/* <li tabIndex={0}>
               <Link className="justify-between">
                 Resources
                 <svg
@@ -82,7 +82,7 @@ const Navbar = () => {
                   <Link>Submenu 2</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
         <Link to="/" className=" normal-case md:text-4xl text-xl">
@@ -101,9 +101,9 @@ const Navbar = () => {
             <Link>Teams</Link>
           </li>
           <li className=" hover:text-blue-600">
-            <Link>Enterprise</Link>
+            <Link>Pricing</Link>
           </li>
-          <li tabIndex={0}>
+          {/* <li tabIndex={0}>
             <Link className=" hover:text-blue-600">
               Parent
               <svg
@@ -124,12 +124,12 @@ const Navbar = () => {
                 <Link>Submenu 2</Link>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li className=" hover:text-blue-600">
-            <Link>Pricing</Link>
+            <Link>Contact</Link>
           </li>
 
-          <li tabIndex={0}>
+          {/* <li tabIndex={0}>
             <Link className=" hover:text-blue-600">
               Resources
               <svg
@@ -150,7 +150,7 @@ const Navbar = () => {
                 <Link>Submenu 2</Link>
               </li>
             </ul>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="navbar-end">
