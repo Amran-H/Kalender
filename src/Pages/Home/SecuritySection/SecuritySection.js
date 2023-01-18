@@ -3,16 +3,14 @@ import { TiTick } from "react-icons/ti";
 
 const SecuritySection = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1  mx-5 my-20 md:mx-auto justify-center items-center">
-      {/* <div>
-        <img
-          className="lg:w-2/3"
-          src="https://images.ctfassets.net/k0lk9kiuza3o/2L9MC4GQzvWk2uSZLbZO29/4d086ff64790b73fc82a63a49ffcf2b5/Calendly-Secure-IT.png?w=1140&h=930&q=50&fm=webp"
-          alt=""
-        />
-      </div> */}
+    <div className="grid md:grid-cols-2 grid-cols-1 bg-slate-100 rounded-lg mx-2 md:p-16 p-5 my-20 md:mx-auto justify-center items-center">
+      <img
+        className="rounded-xl mb-5 w-full md:hidden md:w-full"
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        alt=""
+      />
       <div className="lg:w-3/4">
-        <h1 className="text-4xl mb-5 font-bold">
+        <h1 className="text-4xl text-cyan-900 mb-5 font-bold">
           Make your IT team feel secure and safe
         </h1>
         <div>
@@ -21,13 +19,13 @@ const SecuritySection = () => {
               <TiTick></TiTick> Centralize billing
             </h1>
             <p className="text-lg">
-              Hundreds of coworkers use Calendly – bring them all together in
+              Hundreds of coworkers use Kalender – bring them all together in
               one secure, managed account.
             </p>
           </div>
           <div className="mb-6">
             <h1 className="text-xl font-bold flex items-center">
-              <TiTick></TiTick> Secure your Calendly usage
+              <TiTick></TiTick> Secure your Kalender usage
             </h1>
             <p className="text-lg">
               Single-sign-on, SCIM, and more make it easy to onboard/offboard
@@ -36,11 +34,11 @@ const SecuritySection = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold flex items-center">
-              <TiTick></TiTick> Standardize how your teams use Calendly
+              <TiTick></TiTick> Standardize how your teams use Kalender
             </h1>
             <p className="text-lg">
-              Manage how your coworkers create meeting types, <br /> send consistent
-              reminders, and adhere to brand standards.
+              Manage how your coworkers create meeting types, <br /> send
+              consistent reminders, and adhere to brand standards.
             </p>
           </div>
         </div>
@@ -48,12 +46,11 @@ const SecuritySection = () => {
 
       <div>
         <img
-          className="lg:w-"
-          src="https://images.ctfassets.net/k0lk9kiuza3o/2L9MC4GQzvWk2uSZLbZO29/4d086ff64790b73fc82a63a49ffcf2b5/Calendly-Secure-IT.png?w=1140&h=930&q=50&fm=webp"
+          className="rounded-xl w-full md:block hidden md:w-full"
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt=""
         />
       </div>
-
     </div>
   );
 };

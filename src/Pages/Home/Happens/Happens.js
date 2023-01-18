@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import image1 from "../../../assets/images/Calendly-Demand-Gen-2__1_.webp";
+import image2 from "../../../assets/images/Calendly-Reminders-2.webp";
+import image3 from "../../../assets/images/Calendly-Route-Customers-Sales-team.webp";
+import image4 from "../../../assets/images/Calendly-Teams-Workflows__1_.webp";
 
 const Happens = () => {
   const [imageChange, setImageChange] = useState(1);
@@ -69,7 +73,7 @@ const Happens = () => {
               </div>
             </div>
 
-            <div className="w-2/6 border-l-4 border-indigo-600">
+            <div className="w-2/6 border-l-4 border-emerald-400">
               <button
                 onClick={() => setImageChange(1)}
                 className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${
