@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ReviewItem from "./ReviewItem";
 
 const ReviewSlider = () => {
+  const [comment, setComment] = useState([]);
+  useEffect(() => {
+    fetch("comment.json")
+      .then((res) => res.json())
+      .then((data) => setComment(data));
+  }, []);
   return (
     <div className="py-10">
       <div className="my-10">
@@ -20,19 +27,19 @@ const ReviewSlider = () => {
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className=""
+        className="grid grid-cols-1 lg:grid-cols-3"
         containerClass="container"
         dotListClass=""
         draggable
         focusOnSelect
-        infinite={false}
+        infinite={true}
         itemClass=""
         keyBoardControl
         minimumTouchDrag={80}
         partialVisible
         pauseOnHover
         renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
+        renderButtonGroupOutside={true}
         renderDotsOutside={false}
         responsive={{
           desktop: {
@@ -60,7 +67,7 @@ const ReviewSlider = () => {
             partialVisibilityGutter: 30,
           },
         }}
-        rewind={false}
+        rewind={true}
         rewindWithAnimation={false}
         rtl
         shouldResetAutoplay
@@ -69,102 +76,9 @@ const ReviewSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-        <div className="card bg-base-100 shadow-xl mx-5 mb-8">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-base-100 shadow-xl mx-5 mb-8">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-base-100 shadow-xl mx-5 mb-8">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-base-100 shadow-xl mx-5 mb-8">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-base-100 shadow-xl mx-5 mb-8 ">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-base-100 shadow-xl mx-5 mb-8">
-          <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
-            </div>
-          </div>
-        </div>
+        {comment.map((comment) => (
+          <ReviewItem key={comment.id} comment={comment} />
+        ))}
       </Carousel>
     </div>
   );

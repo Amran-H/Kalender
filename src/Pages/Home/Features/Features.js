@@ -13,7 +13,7 @@ const Features = () => {
       <h1 className="text-5xl text-cyan-900 text-center font-bold mb-10">
         Our Features
       </h1>
-      <div className="grid gap-8 grid-cols-3">
+      <div className="grid gap-8 lg:grid-cols-3 grid-cols-1">
         {features.map((feature) => (
           <FeatureItem key={feature.id} feature={feature} />
         ))}

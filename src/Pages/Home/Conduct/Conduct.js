@@ -126,7 +126,7 @@ const Conduct = () => {
                 </div>
                 <div className="px-3 lg:w-1/2">
                   <img
-                    className="lg:h-[520px]"
+                    className="lg:h-[520px] "
                     src="https://images.unsplash.com/photo-1673543546762-c89d17efe580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt=""
                   />
