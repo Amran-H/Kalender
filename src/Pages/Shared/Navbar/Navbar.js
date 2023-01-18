@@ -27,18 +27,18 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-bold"
           >
             <li>
-              <Link>Individuals</Link>
+              <Link to="/individuals">Individuals</Link>
             </li>
             <li>
-              <Link>Teams</Link>
-            </li>
-
-            <li>
-              <Link>Pricing</Link>
+              <Link to="/teams">Teams</Link>
             </li>
 
             <li>
-              <Link>Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
+            </li>
+
+            <li>
+              <Link to="contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -52,18 +52,18 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold">
           <li className=" hover:text-emerald-600">
-            <Link>Individuals</Link>
+            <Link to="/individuals">Individuals</Link>
           </li>
           <li className=" hover:text-emerald-600">
-            <Link>Teams</Link>
-          </li>
-
-          <li className=" hover:text-emerald-600">
-            <Link>Pricing</Link>
+            <Link to="/teams">Teams</Link>
           </li>
 
           <li className=" hover:text-emerald-600">
-            <Link>Pricing</Link>
+            <Link to="/pricing">Pricing</Link>
+          </li>
+
+          <li className=" hover:text-emerald-600">
+            <Link to="contact">Contact</Link>
           </li>
         </ul>
       </div>
