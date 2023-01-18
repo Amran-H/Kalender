@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name": "Reduce email back-and-forth",
+        "details" : "Customers can check your availability online and book with you.",
+        "icon" : "https://cdn-icons-png.flaticon.com/128/600/600268.png"
+    },
+    {
+        "id":1,
+        "name": "Reduce email back-and-forth",
+        "details" : "Customers can check your availability online and book with you.",
+        "icon" : "https://cdn-icons-png.flaticon.com/128/2403/2403066.png"
+    },
+    {
+        "id":1,
+        "name": "Reduce email back-and-forth",
+        "details" : "Customers can check your availability online and book with you.",
+        "icon" : "https://cdn-icons-png.flaticon.com/128/1585/1585147.png"
+    }
+]
