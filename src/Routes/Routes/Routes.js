@@ -4,8 +4,10 @@ import Contact from "../../Pages/Contact/Contact";
 import Home from "../../Pages/Home/Home/Home";
 import Individuals from "../../Pages/Individuals/Individuals";
 import Login from "../../Pages/Login/Login";
+import NotFound from "../../Pages/NotFound/NotFound";
 import Pricing from "../../Pages/Pricing/Pricing";
 import Register from "../../Pages/Register/Register";
+import Review from "../../Pages/Review/Review";
 import Teams from "../../Pages/Teams/Teams";
 
 const router = createBrowserRouter([
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/teams",
-        element: <Teams></Teams>
+        element: <Teams></Teams>,
       },
       {
         path: "/pricing",
@@ -41,7 +43,15 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
+      {
+        path: "/review",
+        element: <Review></Review>,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
