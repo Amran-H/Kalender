@@ -40,6 +40,9 @@ const Navbar = () => {
             <li>
               <Link to="integrations">Integrations</Link>
             </li>
+            <li>
+              <Link to="/mySchedule">My schedule</Link>
+            </li>
           </ul>
         </div>
         <Link to="/" className="text-emerald-400 font-bold normal-case md:text-4xl text-xl">
@@ -64,6 +67,9 @@ const Navbar = () => {
 
           <li className=" hover:text-emerald-600">
             <Link to="/integrations">Integrations</Link>
+          </li>
+          <li>
+            <Link to="/mySchedule">My schedule</Link>
           </li>
         </ul>
       </div>
