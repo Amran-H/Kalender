@@ -65,11 +65,6 @@ const Individuals = () => {
       </div>
     </div>
   );
-  return (
-    <div className=''>
-      Individuals Page
-    </div>
-  );
 };
 
 export default Individuals;

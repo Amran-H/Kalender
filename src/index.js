@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <AuthProvider>
       <Provider store={store}>
-          <App />
+        <App />
       </Provider>
     </AuthProvider>
   </React.StrictMode >

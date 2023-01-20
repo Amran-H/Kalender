@@ -73,7 +73,7 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="your email"
+                placeholder="email"
                 className="input input-bordered"
                 required
               />
@@ -85,23 +85,27 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
-                placeholder="your password"
+                placeholder="password"
                 className="input input-bordered"
                 required
               />
             </div>
-
             <div className="form-control mt-6">
-              <button className="btn border-none bg-emerald-400 hover:bg-emerald-600">
+              <button className="btn btn-outline border-none bg-emerald-400 hover:bg-emerald-600 text-white">
                 Register
               </button>
             </div>
-            <p className="text-center">Or</p>
-            <button className="btn btn-outline btn-primary"><FcGoogle /> <span className="ml-2">Sign up with Google</span> </button>
+            <p className="text-center font-semibold">Or</p>
+            <button
+              onClick={handleSignInWithGoogle}
+              className="btn btn-outline border-none bg-emerald-400 hover:bg-emerald-600 text-white"
+            >
+              <FcGoogle /> <span className="ml-2">Sign up with Google</span>{" "}
+            </button>
           </form>
           <p className="text-center">
             Already have an account?
-            <Link to="/login" className="text-blue-600 font-bold">
+            <Link to="/login" className="text-emerald-600 font-bold">
               Log in
             </Link>
           </p>
