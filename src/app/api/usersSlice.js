@@ -12,9 +12,12 @@ export const usersSlice = apiSlice.injectEndpoints({
         }),
         postUser: builder.mutation({
             query: initialPost => ({
-                url: `/users`,
+                url: `/users?email=${initialPost.email}`,
                 method: "post",
-                body: initialPost
+                body: initialPost,
+                transformResponse: response => {
+                    console.log(response)
+                }
             })
         })
     })
@@ -23,5 +26,5 @@ export const usersSlice = apiSlice.injectEndpoints({
 
 export const {
     useGetUsersQuery,
-    usePostUserMutation
+    usePostUserMutation,
 } = usersSlice;

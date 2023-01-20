@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import { usePostUserMutation } from "../../app/api/usersSlice";
 
 const Register = () => {
   const { createUser, googleSignIn } = useContext(AuthContext);
-
+  const [postUser, { isLoading }] = usePostUserMutation();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -16,12 +17,12 @@ const Register = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-
-    console.log(email, password);
+    const name = form.name.value;
 
     createUser(email, password)
       .then((result) => {
         const user = result.user;
+        postUser({ name, email });
         navigate(from, { replace: true });
         console.log(user);
       })
@@ -32,11 +33,16 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
+        postUser({ name: user.displayName, email: user.email })
         navigate(from, { replace: true });
         console.log(user);
       })
       .catch((error) => console.error(error));
   };
+
+  if (isLoading) {
+    return <p>Loading...</p>
+  }
 
   return (
     <div className="hero min-h-screen bg-base-200">
