@@ -23,7 +23,13 @@ const Individuals = () => {
 
   return (
     <div className="mt-14">
-      <h1 className="text-3xl text-center font-bold">Individuals Schedule</h1>
+      <h1 className="text-5xl text-center font-bold mb-10">
+        One-on-one meetings
+      </h1>
+      <p className="lg:w-3/5 mx-auto text-center text-lg">
+        Create your own, fully-branded booking page for seamless booking. Skip
+        the back and forth and reduce no-shows.
+      </p>
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-14
         bg-base-100 py-10"

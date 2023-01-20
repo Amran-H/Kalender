@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import Home from "../../Pages/Home/Home/Home";
-import Individuals from "../../Pages/Individuals/Individuals";
+import Individuals from "../../Pages/Individuals/Individuals/Individuals";
 import Integrations from "../../Pages/Integrations/Integrations";
 import Login from "../../Pages/Login/Login";
 import NotFound from "../../Pages/NotFound/NotFound";
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/integrations",
-        element: <Integrations></Integrations>
+        element: <Integrations></Integrations>,
       },
       {
         path: "/review",
