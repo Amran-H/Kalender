@@ -39,7 +39,9 @@ const Review = () => {
             ></textarea>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Submit</button>
+            <button className="btn bg-emerald-400 hover:bg-emerald-600 border-none text-xl">
+              Submit
+            </button>
           </div>
         </div>
       </div>

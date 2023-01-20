@@ -43,7 +43,7 @@ const Client = () => {
 
   const logosArr2 = [
     {
-      name: "etihad",
+      name: "etihadgit",
       image: etihadImg,
     },
     {
@@ -93,3 +93,7 @@ const Client = () => {
 };
 
 export default Client;
+
+
+
+
