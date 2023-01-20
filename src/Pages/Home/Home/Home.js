@@ -1,10 +1,11 @@
 import React from "react";
 import Client from "../Client/Client";
 import Conduct from "../Conduct/Conduct";
+import Features from "../Features/Features";
 import Header from "../Header/Header";
-import Integrations from "../Integrations/Integrations";
 import Newsteler from "../Newsteler/Newsteler";
 import Reviews from "../Reviews/Reviews";
+import ReviewSlider from "../ReviewSlider/ReviewSlider";
 import SecuritySection from "../SecuritySection/SecuritySection";
 import Happens from "./../Happens/Happens";
 
@@ -14,11 +15,11 @@ const Home = () => {
       <Header />
       <Conduct />
       <Reviews />
-      <Client />
       <Happens />
-      <Integrations />
+      <Features />
       <SecuritySection />
-      <Newsteler></Newsteler>
+      <ReviewSlider />
+      <Client />
     </div>
   );
 };
