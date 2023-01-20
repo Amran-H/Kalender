@@ -4,6 +4,7 @@ import Home from "../../Pages/Home/Home/Home";
 import Individuals from "../../Pages/Individuals/Individuals";
 import Integrations from "../../Pages/Integrations/Integrations";
 import Login from "../../Pages/Login/Login";
+import MySchedule from "../../Pages/MySchedule/MySchedule";
 import NotFound from "../../Pages/NotFound/NotFound";
 import Pricing from "../../Pages/Pricing/Pricing";
 import Register from "../../Pages/Register/Register";
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/review",
         element: <Review></Review>,
+      },
+      {
+        path: "/mySchedule",
+        element: <MySchedule></MySchedule>,
       },
     ],
   },
