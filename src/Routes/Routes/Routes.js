@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
-import Contact from "../../Pages/Contact/Contact";
 import Home from "../../Pages/Home/Home/Home";
 import Individuals from "../../Pages/Individuals/Individuals";
+import Integrations from "../../Pages/Integrations/Integrations";
 import Login from "../../Pages/Login/Login";
 import Pricing from "../../Pages/Pricing/Pricing";
 import Register from "../../Pages/Register/Register";
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
         element: <Pricing></Pricing>,
       },
       {
-        path: "/contact",
-        element: <Contact></Contact>,
+        path: "/integrations",
+        element: <Integrations></Integrations>
       },
     ],
   },
