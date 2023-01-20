@@ -3,7 +3,7 @@ import Client from "../Client/Client";
 import Conduct from "../Conduct/Conduct";
 import Features from "../Features/Features";
 import Header from "../Header/Header";
-import Integrations from "../Integrations/Integrations";
+import Newsteler from "../Newsteler/Newsteler";
 import Reviews from "../Reviews/Reviews";
 import ReviewSlider from "../ReviewSlider/ReviewSlider";
 import SecuritySection from "../SecuritySection/SecuritySection";
@@ -17,7 +17,6 @@ const Home = () => {
       <Reviews />
       <Happens />
       <Features />
-      <Integrations />
       <SecuritySection />
       <ReviewSlider />
       <Client />

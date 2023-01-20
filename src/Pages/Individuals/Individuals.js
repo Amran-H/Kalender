@@ -2,7 +2,7 @@ import React from 'react';
 
 const Individuals = () => {
     return (
-        <div className='h-screen'>
+        <div className=''>
             Individuals Page
         </div>
     );
