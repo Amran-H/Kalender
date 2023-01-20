@@ -2,12 +2,10 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from "../../contexts/AuthProvider";
-import { usePostUserMutation } from "../../app/api/usersSlice";
 
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);
-  const [postUser, { isLoading }] = usePostUserMutation();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -43,16 +41,12 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-        postUser({ name: user.displayName, email: user.email })
+
         navigate(from, { replace: true });
         console.log(user);
       })
       .catch((error) => console.error(error));
   };
-
-  if (isLoading) {
-    return <p>Loading..</p>
-  }
 
   return (
     <div className="hero min-h-screen bg-base-200 ">
