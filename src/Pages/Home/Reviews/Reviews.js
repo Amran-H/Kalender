@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Reviews = () => {
   return (
-    <div className="hero bg-[#f7faff]">
+    <div className="hero bg-[#f7faff] mt-10 rounded-lg">
       <div className="hero-content md:h-screen flex-col lg:flex-row">
         <div className="md:w-1/2 grid place-content-center">
           <img
