@@ -83,9 +83,15 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+            <li>
+              <Link to="mySchedule">My Schedule</Link>
+            </li>
           </ul>
         </div>
-        <Link to="/" className="text-emerald-400 font-bold normal-case md:text-4xl text-xl">
+        <Link
+          to="/"
+          className="text-emerald-400 font-bold normal-case md:text-4xl text-xl"
+        >
           Kalender
         </Link>
       </div>
@@ -151,6 +157,9 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
+          <li>
+            <Link to="/mySchedule">My Schedule</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
@@ -160,7 +169,9 @@ const Navbar = () => {
         >
           Log In
         </Link>
-        <Link className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
+        <Link className="btn border-none bg-emerald-400 hover:bg-emerald-600">
+          Get started
+        </Link>
       </div>
     </div>
   );
