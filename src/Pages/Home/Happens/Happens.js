@@ -76,33 +76,29 @@ const Happens = () => {
             <div className="w-2/6 border-l-4 border-emerald-400">
               <button
                 onClick={() => setImageChange(1)}
-                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${
-                  imageChange === 1 ? "text-cyan-900" : "text-gray-400"
-                }`}
+                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${imageChange === 1 ? "text-cyan-900" : "text-gray-400"
+                  }`}
               >
                 Let People schedule meeting on your website
               </button>
               <button
                 onClick={() => setImageChange(2)}
-                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${
-                  imageChange === 2 ? "text-cyan-900" : "text-gray-400"
-                }`}
+                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${imageChange === 2 ? "text-cyan-900" : "text-gray-400"
+                  }`}
               >
                 Screen people before they can book with you
               </button>
               <button
                 onClick={() => setImageChange(3)}
-                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${
-                  imageChange === 3 ? "text-cyan-900" : "text-gray-400"
-                }`}
+                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${imageChange === 3 ? "text-cyan-900" : "text-gray-400"
+                  }`}
               >
                 Make people reconfirm meeting with you
               </button>
               <button
                 onClick={() => setImageChange(4)}
-                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${
-                  imageChange === 4 ? "text-cyan-900" : "text-gray-400"
-                }`}
+                className={`btn btn-ghost mt-3 h-auto text-2xl px-5 font-bold text-left ml-8 py-6 ${imageChange === 4 ? "text-cyan-900" : "text-gray-400"
+                  }`}
               >
                 Automatically move a deal along with helpful content
               </button>
