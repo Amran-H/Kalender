@@ -22,7 +22,7 @@ const Individuals = () => {
   };
 
   return (
-    <div className="mt-14">
+    <div className="mt-14 ">
       <h1 className="text-5xl text-center font-bold mb-10">
         One-on-one meetings
       </h1>

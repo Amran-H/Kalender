@@ -46,7 +46,7 @@ const TeamsBooking = () => {
   return (
     <div className="mt-14 ">
       <h1 className="text-5xl text-center font-bold mb-10">Group sessions</h1>
-      <p className="lg:w-3/5 mx-auto text-center text-lg">
+      <p className=" lg:w-3/5 mx-auto text-center text-lg">
         Whether it’s two or two hundred attendees, Sprintful is ideal for
         enabling your clients to reserve a seat in your upcoming group sessions
         - online or offline, we got you covered.

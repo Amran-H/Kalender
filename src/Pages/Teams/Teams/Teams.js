@@ -6,7 +6,7 @@ import TeamsBooking from "../TeamsBooking";
 
 const Teams = () => {
   return (
-    <div className="lg:w-11/12 mx-auto">
+    <div className="w-11/12 lg:w-11/12 mx-auto">
       <TeamsBooking />
       <ScheduleCards />
     </div>

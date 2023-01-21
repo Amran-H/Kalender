@@ -20,7 +20,7 @@ const Footer = () => {
           <h3 className="my-6 text-xl font-bold text-black">About</h3>
 
           <li className="my-5">
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/">Contact Us</Link>
           </li>
           <li className="my-5">
             <Link to="/review">Review</Link>
@@ -32,6 +32,9 @@ const Footer = () => {
         <div className="list-none">
           <h3 className="my-6 text-xl font-bold text-black">Services</h3>
 
+          <li className="my-5">
+            <Link to="/mySchedule">My Schedule</Link>
+          </li>
           <li className="my-5">
             <Link to="/individuals">Individuals</Link>
           </li>
