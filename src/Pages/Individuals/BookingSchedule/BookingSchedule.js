@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
 import { format } from "date-fns";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
 
 const Individuals = () => {
-  const [value, onChange] = useState(new Date());
+  const [selected, setSelected] = useState(new Date());
 
-  const date = format(value, "PP");
+  const date = format(selected, "PP");
 
   const handleBooking = (data) => {
     data.preventDefault();
@@ -35,7 +35,7 @@ const Individuals = () => {
         bg-base-100 py-10"
       >
         <div className="md:ml-10 lg:ml-20 lg:w-full md:w-full w-3/4 mx-auto">
-          <Calendar onChange={onChange} value={value} />
+          <DayPicker mode="single" selected={selected} onSelect={setSelected} />
         </div>
         <form
           onSubmit={handleBooking}
@@ -43,6 +43,9 @@ const Individuals = () => {
          md:w-full w-3/4 mx-auto"
         >
           <div className="form-control w-full max-w-xs my-5">
+            <h1 className="text-lg font-bold text-center text-emerald-600 mb-8">
+              Meeting Schedule Time {date}
+            </h1>
             <select name="select" className="select select-bordered ">
               <option disabled selected>
                 Select Your Meeting Time
