@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
 import { format } from "date-fns";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
 
-const Teams = () => {
-  const [value, onChange] = useState(new Date());
+const TeamsBooking = () => {
+  const [selected, setSelected] = useState(new Date());
   const [email, setEmail] = useState([]);
 
-  const date = format(value, "PP");
+  const date = format(selected, "PP");
 
   console.log("sharif", email);
 
@@ -44,19 +44,24 @@ const Teams = () => {
   };
 
   return (
-    <div className="mt-14">
-      <h1 className="text-3xl text-center font-bold">Teams Schedule</h1>
+    <div className="mt-14 ">
+      <h1 className="text-5xl text-center font-bold mb-10">Group sessions</h1>
+      <p className="lg:w-3/5 mx-auto text-center text-lg">
+        Whether it’s two or two hundred attendees, Sprintful is ideal for
+        enabling your clients to reserve a seat in your upcoming group sessions
+        - online or offline, we got you covered.
+      </p>
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-14
         bg-base-100 py-10"
       >
         <div className="md:ml-10 lg:ml-20 lg:w-full md:w-full w-3/4 mx-auto">
-          <Calendar onChange={onChange} value={value} />
+          <DayPicker mode="single" selected={selected} onSelect={setSelected} />
         </div>
         <form
           onSubmit={handleBooking}
           className="md:ml-10 lg:ml-20 lg:w-full
-         md:w-full w-3/4 mx-auto content-center"
+          md:w-full w-3/4 mx-auto"
         >
           <div className="form-control w-full max-w-xs my-5">
             <select name="select" className="select select-bordered ">
@@ -73,26 +78,28 @@ const Teams = () => {
             </select>
           </div>
           <div>
-            {email.map((data, i) => {
-              return (
-                <div className="flex items-center">
-                  <h1 className="hidden">{data}</h1>
-                  <input
-                    type="email"
-                    name="email"
-                    onBlur={(e) => handleEmail(e, i)}
-                    placeholder="Enter Your Meeting Partner Email"
-                    className="input input-bordered w-full max-w-xs my-5 rounded-r-none"
-                  />
-                  <button
-                    onClick={() => handleDelete(i)}
-                    className="btn rounded-l-none"
-                  >
-                    X
-                  </button>
-                </div>
-              );
-            })}
+            <div>
+              {email.map((data, i) => {
+                return (
+                  <div className="flex items-center">
+                    <h1 className="hidden">{data}</h1>
+                    <input
+                      type="email"
+                      name="email"
+                      onBlur={(e) => handleEmail(e, i)}
+                      placeholder="Enter Your Meeting Partner Email"
+                      className="input input-bordered w-full max-w-xs my-5 rounded-r-none"
+                    />
+                    <button
+                      onClick={() => handleDelete(i)}
+                      className="btn rounded-l-none"
+                    >
+                      X
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div>
             {" "}
@@ -113,4 +120,4 @@ const Teams = () => {
   );
 };
 
-export default Teams;
+export default TeamsBooking;

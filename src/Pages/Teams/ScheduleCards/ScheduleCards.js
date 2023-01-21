@@ -1,15 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import ScheduleItem from "./ScheduleItem";
+import ScheduleItem from "../../Individuals/ScheduleCard/ScheduleItem";
 
-const ScheduleCard = () => {
+const ScheduleCards = () => {
   const [cards, setCards] = useState([]);
   useEffect(() => {
-    fetch("individuals.json")
+    fetch("teams.json")
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
+  console.log("hello", cards);
   return (
     <div className="lg:w-5/6 mx-auto">
       {cards.map((card) => (
@@ -19,4 +20,4 @@ const ScheduleCard = () => {
   );
 };
 
-export default ScheduleCard;
+export default ScheduleCards;
