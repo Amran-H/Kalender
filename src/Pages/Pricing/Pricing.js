@@ -71,8 +71,8 @@ const Pricing = () => {
             </div>
             <hr className='my-6' />
             <div className='flex flex-row gap-10  '>
-                <div className='mr-20 md:w-80'><h1 className='text-xl font-semibold'>Integrations
-                </h1><p>Zoom, Google Meet, Slack, Zapier, etc.</p></div>
+                <div className='mr-20 md:w-80'><h1 className='text-xl font-semibold'>One-on-one meetings
+                </h1><p>Good for sales execs, realtors, HR consultants.</p></div>
                 <div className='flex flex-row md:gap-56  '>
                     <div className='text-xl'><FaCheck className='text-emerald-600' /> </div>
                     <div className='text-xl' ><FaCheck className='text-emerald-600' /> </div>
@@ -82,8 +82,9 @@ const Pricing = () => {
             </div>
             <hr className='my-6' />
             <div className='flex flex-row gap-10  '>
-                <div className='mr-20 md:w-80'><h1 className='text-xl font-semibold'>Integrations
-                </h1><p>Zoom, Google Meet, Slack, Zapier, etc.</p></div>
+                <div className='mr-20 md:w-80'><h1 className='text-xl font-semibold'>Group meetings
+                </h1><p>
+                        Good for yoga classes, virtual events</p></div>
                 <div className='flex flex-row md:gap-56  '>
                     <div className='text-xl'><FaRegTimesCircle className='text-red-600' /></div>
                     <div className='text-xl' ><FaCheck className='text-emerald-600' /> </div>
@@ -93,8 +94,9 @@ const Pricing = () => {
             </div>
             <hr className='my-6' />
             <div className='flex flex-row gap-10  '>
-                <div className='mr-20 md:w-80'><h1 className='text-xl font-semibold'>Integrations
-                </h1><p>Zoom, Google Meet, Slack, Zapier, etc.</p></div>
+                <div className='mr-20 md:w-80'><h1 className='text-xl font-semibold'>Team meetings
+                </h1><p>
+                        Round-robin or directory listing</p></div>
                 <div className='flex flex-row md:gap-56  '>
                     <div className='text-xl'><FaCheck className='text-emerald-600' /> </div>
                     <div className='text-xl' ><FaCheck className='text-emerald-600' /> </div>
