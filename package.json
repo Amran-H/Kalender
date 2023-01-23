@@ -11,8 +11,12 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "daisyui": "^2.46.1",
+<<<<<<< HEAD
+    "firebase": "^9.16.0",
+=======
     "date-fns": "^2.29.3",
     "firebase": "^9.15.0",
+>>>>>>> d66f0493481bef7d5fc7260e4ac6f66bd4cc427d
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",
     "react-datepicker": "^4.8.0",
