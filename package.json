@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.7.7",
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -10,13 +11,20 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "daisyui": "^2.46.1",
+<<<<<<< HEAD
     "firebase": "^9.16.0",
+=======
+    "date-fns": "^2.29.3",
+    "firebase": "^9.15.0",
+>>>>>>> d66f0493481bef7d5fc7260e4ac6f66bd4cc427d
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",
     "react-datepicker": "^4.8.0",
+    "react-day-picker": "^8.4.1",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.3.5",
     "react-hook-form": "^7.42.1",
+    "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
     "react-router-dom": "^6.6.2",

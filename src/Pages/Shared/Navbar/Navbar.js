@@ -80,7 +80,7 @@ const Navbar = () => {
         >
           Log In
         </Link>
-        <Link className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
+        <Link to="/register" className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
       </div>
     </div>
   );
