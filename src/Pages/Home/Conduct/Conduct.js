@@ -10,41 +10,37 @@ const Conduct = () => {
         <div className="flex flex-col lg:flex-row justify-between text-xl font-bold">
           <button
             onClick={() => setItem(1)}
-            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${
-              item === 1
-                ? "bg-sky-400 hover:bg-sky-400 text-white"
-                : "text-gray-600"
-            } `}
+            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${item === 1
+              ? "bg-sky-400 hover:bg-sky-400 text-white"
+              : "text-gray-600"
+              } `}
           >
             Pediatrics
           </button>
           <button
             onClick={() => setItem(2)}
-            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${
-              item === 2
-                ? "bg-sky-400 hover:bg-sky-400 text-white"
-                : "text-gray-600"
-            } `}
+            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${item === 2
+              ? "bg-sky-400 hover:bg-sky-400 text-white"
+              : "text-gray-600"
+              } `}
           >
             Hematology
           </button>
           <button
             onClick={() => setItem(3)}
-            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${
-              item === 3
-                ? "bg-sky-400 hover:bg-sky-400 text-white"
-                : "text-gray-600"
-            } `}
+            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${item === 3
+              ? "bg-sky-400 hover:bg-sky-400 text-white"
+              : "text-gray-600"
+              } `}
           >
             MRI
           </button>
           <button
             onClick={() => setItem(4)}
-            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${
-              item === 4
-                ? "bg-sky-400 hover:bg-sky-400 text-white"
-                : "text-gray-600"
-            } `}
+            className={`btn bg-gray-100  hover:bg-gray-200  lg:w-52 mt-4 border-none ${item === 4
+              ? "bg-sky-400 hover:bg-sky-400 text-white"
+              : "text-gray-600"
+              } `}
           >
             X-Ray Diagnostics
           </button>

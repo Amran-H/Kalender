@@ -13,7 +13,7 @@ const Reviews = () => {
               clipPath:
                 "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)",
             }}
-            alt
+            alt=""
             className="h-[300px] w-[300px] shadow-2xl"
           />
         </div>

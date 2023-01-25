@@ -64,7 +64,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="email"
-                className="input input-bordered"
+                className="input input-bordered rounded-full"
                 required
               />
             </div>
@@ -76,11 +76,11 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="password"
-                className="input input-bordered"
+                className="input input-bordered rounded-full"
                 required
               />
               <label className="label">
-                <Link href="#" className="label-text-alt link link-hover">
+                <Link href="#" className="label-text-alt link link-hover ">
                   Forgot password?
                 </Link>
               </label>
@@ -94,20 +94,31 @@ const Login = () => {
             {passwordError && (
               <p className="text-red-500">Wrong password or email</p>
             )}
-            <div className="form-control mt-6">
-              <button className="btn btn-outline border-none bg-emerald-400 hover:bg-emerald-600 text-white">Login</button>
+            <div className="form-control mt-2  items-center">
+              <button className="btn btn-outline w-full md:w-1/2 rounded-full border-none bg-emerald-400 hover:bg-emerald-600 text-white font-bold ">Login</button>
             </div>
-            <p className="text-center font-semibold">Or</p>
-            <button
-              onClick={handleSignInWithGoogle}
-              className="btn btn-outline border-none bg-emerald-400 hover:bg-emerald-600 text-white"
-            >
-              <FcGoogle /> <span className="ml-2">Sign up with Google</span>{" "}
-            </button>
+            <div class="relative ">
+              <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-b border-gray-300"></div>
+              </div>
+              <div class="relative flex justify-center">
+                <span class="bg-white px-4 text-sm text-gray-500"><p className="text-center font-semibold">Or</p></span>
+              </div>
+            </div>
+
+            <div className=" text-center">
+              <button
+                onClick={handleSignInWithGoogle}
+                className="btn btn-outline border-none w-full md:w-2/3 rounded-full bg-emerald-400 hover:bg-emerald-600 text-white"
+              >
+                <FcGoogle className="text-2xl" /> <span className="ml-2">Google Sign In</span>
+              </button>
+            </div>
+
           </form>
           <p className="text-center">
-            New in Kalender?
-            <Link to="/register" className="text-emerald-600 font-bold">
+            New to Kalender?
+            <Link to="/register" className="text-emerald-600 font-bold ml-1">
               Register
             </Link>
           </p>
