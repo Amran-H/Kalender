@@ -1,4 +1,5 @@
-import { apiSlice } from "../apiSlice/apiSlice"
+import { apiSlice } from "../apiSlice/apiSlice";
+
 
 const initialState = [];
 
