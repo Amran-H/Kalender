@@ -42,7 +42,7 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-        addUser({ email: email, name: form.name.value })
+        addUser({ email: user.email, name: user.displayName })
         navigate(from, { replace: true });
         console.log(user);
       })
