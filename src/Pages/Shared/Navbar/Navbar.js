@@ -1,7 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleLogOut = async () => {
+    await logOut();
+    navigate("/login")
+  }
   return (
     <div className="navbar bg-base-100 ">
       <div className="navbar-start">
@@ -74,12 +82,22 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link
-          to="/login"
-          className="md:mr-4 mr-3 hover:text-emerald-600 font-bold"
-        >
-          Log In
-        </Link>
+        {
+          user?.uid ?
+            <p
+              className="md:mr-4 mr-3 hover:text-emerald-600 font-bold"
+              onClick={handleLogOut}
+            >
+              Log Out
+            </p>
+            : 
+            <Link
+              to="/login"
+              className="md:mr-4 mr-3 hover:text-emerald-600 font-bold"
+            >
+              Log In
+            </Link>
+        }
         <Link to="/register" className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
       </div>
     </div>

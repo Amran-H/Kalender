@@ -2,9 +2,12 @@ import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import { useAddUserMutation } from "../../app/usersSlice/usersSlice";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, googleSignIn } = useContext(AuthContext);
+  const [addUser] = useAddUserMutation();
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,6 +25,8 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
+        addUser({ email: email, name: form.name.value })
+        toast.success("Login successfull")
         navigate(from, { replace: true });
         console.log(user);
       })
@@ -32,6 +37,8 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
+        addUser({ name: user.displayName, email: user.email })
+        toast.success("Login successfull")
         navigate(from, { replace: true });
         console.log(user);
       })
