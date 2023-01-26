@@ -6,13 +6,21 @@ import reportWebVitals from './reportWebVitals';
 import AuthProvider from './contexts/AuthProvider';
 import { Provider } from 'react-redux';
 import { store } from './app/store/store';
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AuthProvider>
       <Provider store={store}>
-      <App />
+        <App />
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          draggable
+          closeOnClick
+        />
       </Provider>
     </AuthProvider>
   </React.StrictMode>
