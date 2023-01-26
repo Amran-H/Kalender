@@ -41,7 +41,7 @@ const Navbar = () => {
               <Link to="integrations">Integrations</Link>
             </li>
             <li>
-              <Link to="mySchedule">My Schedule</Link>
+              <Link to="mySchedule">My Account</Link>
             </li>
           </ul>
         </div>
@@ -72,7 +72,9 @@ const Navbar = () => {
             <Link to="/integrations">Integrations</Link>
           </li>
           <li>
-            <Link to="/mySchedule">My Schedule</Link>
+            <Link className="btn-success" to="/mySchedule">
+              My Account
+            </Link>
           </li>
         </ul>
       </div>

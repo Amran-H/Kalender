@@ -1,8 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
-import MySchedule from "../../MySchedule/MySchedule";
 import Home from "../../Pages/Home/Home/Home";
-import Individuals from "../../Pages/Individuals/Individuals";
 import Integrations from "../../Pages/Integrations/Integrations";
 import Login from "../../Pages/Login/Login";
 import NotFound from "../../Pages/NotFound/NotFound";
@@ -10,7 +8,8 @@ import Pricing from "../../Pages/Pricing/Pricing";
 import Register from "../../Pages/Register/Register";
 import Review from "../../Pages/Review/Review";
 import Teams from "../../Pages/Teams/Teams";
-
+import MySchedule from "../../MySchedule/MySchedule";
+import Individuals from "../../Pages/Individuals/Individuals";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
         element: <Individuals></Individuals>,
       },
       {
-        path: "/mySchedule",
-        element: <MySchedule></MySchedule>,
-      },
-      {
         path: "/teams",
         element: <Teams></Teams>,
       },
@@ -51,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/review",
         element: <Review></Review>,
+      },
+      {
+        path: "/mySchedule",
+        element: <MySchedule></MySchedule>,
       },
     ],
   },

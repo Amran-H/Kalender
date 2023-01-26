@@ -17,7 +17,9 @@ const Home = () => {
       <Reviews />
       <Happens />
       <Features />
-      <SecuritySection />
+      <div data-aos="fade-down">
+        <SecuritySection />
+      </div>
       <ReviewSlider />
       <Client />
     </div>

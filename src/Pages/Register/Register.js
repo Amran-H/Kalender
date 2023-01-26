@@ -9,7 +9,7 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const from = location.state?.from?.pathname || "/";
+  const from = location?.state?.from?.pathname || "/";
 
   const handleSignUp = (event) => {
     event.preventDefault();

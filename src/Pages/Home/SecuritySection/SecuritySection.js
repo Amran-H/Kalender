@@ -3,7 +3,10 @@ import { TiTick } from "react-icons/ti";
 
 const SecuritySection = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 bg-slate-100 rounded-lg mx-2 md:p-16 p-5 my-20 md:mx-auto justify-center items-center">
+    <div
+      data-aos="fade-down"
+      className=" grid md:grid-cols-2 grid-cols-1 bg-slate-100 rounded-lg mx-2 md:p-16 p-5 my-20 md:mx-auto justify-center items-center"
+    >
       <img
         className="rounded-xl mb-5 w-full md:hidden md:w-full"
         src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
