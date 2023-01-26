@@ -17,10 +17,10 @@ export const ContactUs = () => {
     if (name && email && message) {
       emailjs
         .sendForm(
-          "service_f980ovr",
-          "template_gy8v3f9",
+          `${process.env.REACT_APP_service}`,
+          `${process.env.REACT_APP_template}`,
           form.current,
-          "wmGnEyeMqRiSec54c"
+          `${process.env.REACT_APP_public_key}`
         )
         .then(
           (result) => {

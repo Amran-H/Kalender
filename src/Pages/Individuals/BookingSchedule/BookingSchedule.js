@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { format } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
+import { toast } from "react-hot-toast";
 
 const Individuals = () => {
   const [selected, setSelected] = useState(new Date());
@@ -18,7 +19,22 @@ const Individuals = () => {
       time,
       email,
     };
-    console.log(booking);
+
+    fetch("http://localhost:5000/single-schedule", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ booking }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.acknowledged) {
+          toast.success("This schedule is success");
+        }
+      })
+      .catch((data) => toast.error("This schedule is error"));
   };
 
   return (
@@ -46,7 +62,7 @@ const Individuals = () => {
             <h1 className="text-lg font-bold text-center text-emerald-600 mb-8">
               Meeting Schedule Time {date}
             </h1>
-            <select name="select" className="select select-bordered ">
+            <select name="select" className="select select-bordered" required>
               <option disabled selected>
                 Select Your Meeting Time
               </option>
@@ -63,6 +79,7 @@ const Individuals = () => {
             <input
               type="email"
               name="email"
+              required
               placeholder="Enter Your Meeting Partner Email"
               className="input input-bordered w-full max-w-xs my-5"
             />
