@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { useAddUserMutation } from "../../app/usersSlice/usersSlice";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
+
 
 const Register = () => {
   const { createUser, googleSignIn } = useContext(AuthContext);
