@@ -17,7 +17,7 @@ root.render(
         <App />
         <ToastContainer
           position="top-right"
-          autoClose={5000}
+          autoClose={1000}
           draggable
           closeOnClick
         />

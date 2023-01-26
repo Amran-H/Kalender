@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { useAddUserMutation } from "../../app/usersSlice/usersSlice";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, googleSignIn } = useContext(AuthContext);
@@ -25,6 +26,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         addUser({ email: email, name: form.name.value })
+        toast.success("Login successfull")
         navigate(from, { replace: true });
         console.log(user);
       })
@@ -36,6 +38,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         addUser({ name: user.displayName, email: user.email })
+        toast.success("Login successfull")
         navigate(from, { replace: true });
         console.log(user);
       })
