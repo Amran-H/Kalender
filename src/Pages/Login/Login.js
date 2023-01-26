@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from "../../contexts/AuthProvider";
+import { useAddUserMutation } from "../../app/usersSlice/usersSlice";
 
 
 const Login = () => {
@@ -10,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const from = location.state?.from?.pathname || "/";
-
+  const [addUser] = useAddUserMutation();
   const [success, setSuccess] = useState(false);
   const [passwordError, setPasswordError] = useState("");
 
@@ -41,7 +42,7 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-
+        addUser({ email: user.email, name: user.displayName })
         navigate(from, { replace: true });
         console.log(user);
       })
