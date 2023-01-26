@@ -35,6 +35,7 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
+        addUser({ name: user.displayName, email: user.email })
         navigate(from, { replace: true });
         console.log(user);
       })
