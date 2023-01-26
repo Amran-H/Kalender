@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from "../../contexts/AuthProvider";
 import { useAddUserMutation } from "../../app/usersSlice/usersSlice";
+import { toast } from "react-toastify";
 
 
 const Login = () => {
@@ -27,6 +28,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
+        toast.success("Login successfull")
         console.log(user);
         setSuccess(true);
         form.reset();
@@ -43,6 +45,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         addUser({ email: user.email, name: user.displayName })
+        toast.success("Login successfull")
         navigate(from, { replace: true });
         console.log(user);
       })
