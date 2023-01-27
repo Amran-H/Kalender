@@ -14,14 +14,14 @@ const TeamsBooking = () => {
 
   const handleBooking = (data, i) => {
     data.preventDefault();
-
     const form = data.target;
     const time = form.select.value;
-
+    const teamCategory = form.teamCategory.value;
     const booking = {
       date,
       time,
       email,
+      teamCategory,
     };
 
     fetch("http://localhost:5000/multi-schedule", {
@@ -29,7 +29,7 @@ const TeamsBooking = () => {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify({ booking }),
+      body: JSON.stringify(booking),
     })
       .then((res) => {
         res.json();
@@ -78,11 +78,15 @@ const TeamsBooking = () => {
           className="md:ml-10 lg:ml-20 lg:w-full
           md:w-full w-3/4 mx-auto"
         >
+          <input
+            required
+            name="teamCategory"
+            placeholder="Type Your Team Category"
+            className="input input-bordered w-full max-w-xs my-5"
+            type="text"
+          />
           <div className="form-control w-full max-w-xs my-5">
             <select name="select" className="select select-bordered " required>
-              <option disabled selected>
-                Select Your Meeting Time
-              </option>
               <option value="10am - 11:00am">10am - 11:00am</option>
               <option value="11am - 12:00am">11am - 12:00am</option>
               <option value="12am - 01:00am">12am - 01:00am</option>

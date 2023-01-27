@@ -10,7 +10,7 @@ const ScheduleCards = () => {
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
-  console.log("hello", cards);
+  console.log("Team Schedule", cards);
   return (
     <div className="lg:w-5/6 mx-auto">
       {cards.map((card) => (

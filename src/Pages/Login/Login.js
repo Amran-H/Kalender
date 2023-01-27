@@ -1,11 +1,9 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FcGoogle } from 'react-icons/fc';
+import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { useAddUserMutation } from "../../app/usersSlice/usersSlice";
 import { toast } from "react-hot-toast";
-
-
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);
@@ -29,7 +27,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        toast.success("Login successfull")
+        toast.success("Login successfull");
         console.log(user);
         setSuccess(true);
         form.reset();
@@ -45,8 +43,8 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-        addUser({ email: user.email, name: user.displayName })
-        toast.success("Login successfull")
+        addUser({ email: user.email, name: user.displayName });
+        toast.success("Login successfull");
         navigate(from, { replace: true });
         console.log(user);
       })
@@ -100,14 +98,18 @@ const Login = () => {
               <p className="text-red-500">Wrong password or email</p>
             )}
             <div className="form-control mt-2  items-center">
-              <button className="btn btn-outline w-full md:w-1/2 rounded-full border-none bg-emerald-400 hover:bg-emerald-600 text-white font-bold ">Login</button>
+              <button className="btn btn-outline w-full md:w-1/2 rounded-full border-none bg-emerald-400 hover:bg-emerald-600 text-white font-bold ">
+                Login
+              </button>
             </div>
             <div class="relative ">
               <div class="absolute inset-0 flex items-center">
                 <div class="w-full border-b border-gray-300"></div>
               </div>
               <div class="relative flex justify-center">
-                <span class="bg-white px-4 text-sm text-gray-500"><p className="text-center font-semibold">Or</p></span>
+                <span class="bg-white px-4 text-sm text-gray-500">
+                  <p className="text-center font-semibold">Or</p>
+                </span>
               </div>
             </div>
 
@@ -116,10 +118,10 @@ const Login = () => {
                 onClick={handleSignInWithGoogle}
                 className="btn btn-outline border-none w-full md:w-2/3 rounded-full bg-emerald-400 hover:bg-emerald-600 text-white"
               >
-                <FcGoogle className="text-2xl" /> <span className="ml-2">Google Sign In</span>
+                <FcGoogle className="text-2xl" />{" "}
+                <span className="ml-2">Google Sign In</span>
               </button>
             </div>
-
           </form>
           <p className="text-center">
             New to Kalender?
