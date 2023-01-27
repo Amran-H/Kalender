@@ -1,5 +1,6 @@
 import React from "react";
 import { TfiAlarmClock } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -30,12 +31,14 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col items-center md:flex-row">
-              <span className="cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline bg-emerald-400 focus:outline-none text-white">
-                Make Your Schedule
-                <p className="text-2xl mx-2">
-                  <TfiAlarmClock></TfiAlarmClock>
-                </p>
-              </span>
+              <Link to="/individuals">
+                <span className="hover:bg-emerald-600 cursor-pointer inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline bg-emerald-400 focus:outline-none text-white">
+                  Make Your Schedule
+                  <p className="text-2xl mx-2">
+                    <TfiAlarmClock></TfiAlarmClock>
+                  </p>
+                </span>
+              </Link>
             </div>
           </div>
           <div className="relative lg:w-1/2">

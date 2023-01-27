@@ -84,13 +84,13 @@ const Navbar = () => {
       <div className="navbar-end">
         {
           user?.uid ?
-            <p
+            <Link
               className="md:mr-4 mr-3 hover:text-emerald-600 font-bold"
               onClick={handleLogOut}
             >
               Log Out
-            </p>
-            : 
+            </Link>
+            :
             <Link
               to="/login"
               className="md:mr-4 mr-3 hover:text-emerald-600 font-bold"
@@ -98,7 +98,18 @@ const Navbar = () => {
               Log In
             </Link>
         }
-        <Link to="/register" className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
+
+        {
+          user?.uid ?
+            <div className="hidden">
+              <Link to="/register" className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
+
+            </div>
+            :
+            <Link to="/register" className="btn border-none bg-emerald-400 hover:bg-emerald-600">Get started</Link>
+
+        }
+
       </div>
     </div>
   );

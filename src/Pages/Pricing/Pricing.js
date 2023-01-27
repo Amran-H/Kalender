@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCheck, FaRegTimesCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
     return (
@@ -13,22 +14,22 @@ const Pricing = () => {
                 <div>
                     <p className='text-2xl font-bold '>Basic</p>
                     <p className='my-4 text-lg'> <span className='text-lg font-bold'>$9</span> per month</p>
-                    <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Sign Up</button>
+                    <Link to="/buyNow">   <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Buy Now</button></Link>
                 </div>
                 <div>
                     <p className='text-2xl font-bold '>Professional</p>
                     <p className='my-4 text-lg'> <span className='text-lg font-bold'>$19</span> per month</p>
-                    <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Sign Up</button>
+                    <Link to="/buyNow">   <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Buy Now</button></Link>
                 </div>
                 <div>
                     <p className='text-2xl font-bold '>Business</p>
                     <p className='my-4 text-lg'> <span className='text-lg font-bold'>$49</span> per month</p>
-                    <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Sign Up</button>
+                    <Link to="/buyNow">   <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Buy Now</button></Link>
                 </div>
                 <div>
                     <p className='text-2xl font-bold '>Enterprise</p>
                     <p className='my-4 text-lg'> <span className='text-lg font-bold'>$9</span> per month</p>
-                    <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Sign Up</button>
+                    <Link to="/buyNow">   <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600'>Buy Now</button></Link>
                 </div>
             </div>
 
@@ -155,7 +156,7 @@ const Pricing = () => {
                         <div className='flex justify-end pr-8 w-1/3 font-semibold items-center'><p><FaCheck className='text-emerald-600' /></p></div>
                     </div>
                     <div className='mr-6'>
-                        <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Sign Up</button>
+                        <Link to="/buyNow"><button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Buy Now</button></Link>
                     </div>
 
                 </div>
@@ -202,7 +203,7 @@ const Pricing = () => {
                         <div className='flex justify-end pr-8 w-1/3 font-semibold items-center'><p><FaCheck className='text-emerald-600' /></p></div>
                     </div>
                     <div className='mr-6'>
-                        <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Sign Up</button>
+                        <Link to="/buyNow"><button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Buy Now</button></Link>
                     </div>
                 </div>
 
@@ -248,7 +249,7 @@ const Pricing = () => {
                         <div className='flex justify-end pr-8 w-1/3 font-semibold items-center'><p><FaCheck className='text-emerald-600' /></p></div>
                     </div>
                     <div className='mr-6'>
-                        <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Sign Up</button>
+                        <Link to="/buyNow"><button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Buy Now</button></Link>
                     </div>
                 </div>
 
@@ -294,7 +295,7 @@ const Pricing = () => {
                         <div className='flex justify-end pr-8 w-1/3 font-semibold items-center'><p><FaCheck className='text-emerald-600' /></p></div>
                     </div>
                     <div className='mr-6'>
-                        <button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Sign Up</button>
+                        <Link to="/buyNow"><button className='btn px-6 border-none bg-emerald-400 hover:bg-emerald-600 w-full '>Buy Now</button></Link>
                     </div>
                 </div>
 
