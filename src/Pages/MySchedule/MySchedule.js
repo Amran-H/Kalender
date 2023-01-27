@@ -190,8 +190,8 @@ const MySchedule = () => {
                         <tr>
                           <th>{i + 1}</th>
                           <td>{teams?.teamCategory}</td>
-                          <td>{teams.date}</td>
-                          <td>{teams.email.length}</td>
+                          <td>{teams?.date}</td>
+                          <td>{teams?.email?.length}</td>
                           <td>
                             <label
                               htmlFor="my-modal-3"

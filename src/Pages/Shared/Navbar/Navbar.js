@@ -35,6 +35,9 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-bold"
           >
             <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/individuals">Individuals</Link>
             </li>
             <li>
@@ -48,9 +51,23 @@ const Navbar = () => {
             <li>
               <Link to="integrations">Integrations</Link>
             </li>
-            <li>
-              <Link to="/mySchedule">My schedule</Link>
-            </li>
+            {
+              user?.uid ?
+                <div>
+                  <li>
+                    <Link to="/mySchedule">My schedule</Link>
+                  </li>
+
+                </div>
+                :
+                <div className="hidden">
+                  <li>
+                    <Link to="/mySchedule">My schedule</Link>
+                  </li>
+
+                </div>
+
+            }
           </ul>
         </div>
         <Link to="/" className="text-emerald-400 font-bold normal-case md:text-4xl text-xl">
@@ -62,6 +79,9 @@ const Navbar = () => {
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
           <li className=" hover:text-emerald-600">
             <Link to="/individuals">Individuals</Link>
           </li>
@@ -76,9 +96,24 @@ const Navbar = () => {
           <li className=" hover:text-emerald-600">
             <Link to="/integrations">Integrations</Link>
           </li>
-          <li>
-            <Link to="/mySchedule">My schedule</Link>
-          </li>
+
+          {
+            user?.uid ?
+              <div>
+                <li>
+                  <Link to="/mySchedule">My schedule</Link>
+                </li>
+
+              </div>
+              :
+              <div className="hidden">
+                <li>
+                  <Link to="/mySchedule">My schedule</Link>
+                </li>
+
+              </div>
+
+          }
         </ul>
       </div>
       <div className="navbar-end">

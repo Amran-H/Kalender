@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/mySchedule",
-        element: <MySchedule></MySchedule>,
+        element: <PrivateRoute><MySchedule></MySchedule></PrivateRoute>,
       },
       {
         path: "/buyNow",
