@@ -15,7 +15,7 @@ const Conduct = () => {
               : "text-gray-600"
               } `}
           >
-            Pediatrics
+            More Sales
           </button>
           <button
             onClick={() => setItem(2)}
@@ -24,7 +24,7 @@ const Conduct = () => {
               : "text-gray-600"
               } `}
           >
-            Hematology
+            Education
           </button>
           <button
             onClick={() => setItem(3)}
@@ -33,7 +33,7 @@ const Conduct = () => {
               : "text-gray-600"
               } `}
           >
-            MRI
+            Hiring
           </button>
           <button
             onClick={() => setItem(4)}
@@ -42,7 +42,7 @@ const Conduct = () => {
               : "text-gray-600"
               } `}
           >
-            X-Ray Diagnostics
+            Security
           </button>
         </div>
         {/* Card section */}

@@ -9,7 +9,9 @@ import NotFound from "../../Pages/NotFound/NotFound";
 import Pricing from "../../Pages/Pricing/Pricing";
 import Register from "../../Pages/Register/Register";
 import Review from "../../Pages/Review/Review";
+import BuyNow from "../../Pages/Shared/BuyNow/BuyNow";
 import Teams from "../../Pages/Teams/Teams/Teams";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/mySchedule",
         element: <MySchedule></MySchedule>,
+      },
+      {
+        path: "/buyNow",
+        element: <PrivateRoute><BuyNow></BuyNow></PrivateRoute>,
       },
     ],
   },
