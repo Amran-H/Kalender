@@ -1,5 +1,4 @@
 import React from "react";
-import { Toaster } from "react-hot-toast";
 import { ContactUs } from "../../Shared/ContactUs/ContactUs";
 import Client from "../Client/Client";
 import Conduct from "../Conduct/Conduct";
@@ -14,9 +13,6 @@ import Happens from "./../Happens/Happens";
 const Home = () => {
   return (
     <div>
-      <div>
-        <Toaster />
-      </div>
       <Header />
       <Conduct />
       <Reviews />
