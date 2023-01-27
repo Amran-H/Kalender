@@ -9,32 +9,33 @@ const Individuals = () => {
 
   const date = format(selected, "PP");
 
-  const handleBooking = (data) => {
+  const handleBooking = (data, e) => {
     data.preventDefault();
     const form = data.target;
     const time = form.select.value;
     const email = form.email.value;
+    const meetingCategory = form.meetingCategory.value;
     const booking = {
       date,
       time,
       email,
+      meetingCategory,
     };
-
     fetch("http://localhost:5000/single-schedule", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify({ booking }),
+      body: JSON.stringify(booking),
     })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         if (data.acknowledged) {
-          toast.success("This schedule is success");
+          form.reset();
+          toast.success("Schedule Making Successfully");
         }
-      })
-      .catch((data) => toast.error("This schedule is error"));
+      });
   };
 
   return (
@@ -62,10 +63,14 @@ const Individuals = () => {
             <h1 className="text-lg font-bold text-center text-emerald-600 mb-8">
               Meeting Schedule Time {date}
             </h1>
+            <input
+              required
+              name="meetingCategory"
+              placeholder="Enter Your Meeting Category"
+              className="input input-bordered w-full max-w-xs my-5"
+              type="text"
+            />
             <select name="select" className="select select-bordered" required>
-              <option disabled selected>
-                Select Your Meeting Time
-              </option>
               <option value="10am - 11:00am">10am - 11:00am</option>
               <option value="11am - 12:00am">11am - 12:00am</option>
               <option value="12am - 01:00am">12am - 01:00am</option>
