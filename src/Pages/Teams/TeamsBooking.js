@@ -29,7 +29,7 @@ const TeamsBooking = () => {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify({ booking }),
+      body: JSON.stringify(booking),
     })
       .then((res) => {
         res.json();
