@@ -10,6 +10,7 @@ import Pricing from "../../Pages/Pricing/Pricing";
 import Register from "../../Pages/Register/Register";
 import Review from "../../Pages/Review/Review";
 import BuyNow from "../../Pages/Shared/BuyNow/BuyNow";
+import DisplayError from "../../Pages/Shared/DisplayError/DisplayError";
 import Teams from "../../Pages/Teams/Teams/Teams";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <DisplayError></DisplayError>,
     children: [
       {
         path: "/",
