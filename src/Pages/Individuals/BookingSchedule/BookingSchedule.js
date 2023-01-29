@@ -1,25 +1,31 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { format } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import { toast } from "react-hot-toast";
+import { AuthContext } from "./../../../contexts/AuthProvider";
 
 const Individuals = () => {
   const [selected, setSelected] = useState(new Date());
+  const { user } = useContext(AuthContext);
 
   const date = format(selected, "PP");
 
   const handleBooking = (data, e) => {
     data.preventDefault();
+    const hostEmail = user?.email;
     const form = data.target;
     const time = form.select.value;
     const email = form.email.value;
+    const meetingDescription = form.meetingDescription.value;
     const meetingCategory = form.meetingCategory.value;
     const booking = {
+      hostEmail,
       date,
       time,
       email,
       meetingCategory,
+      meetingDescription,
     };
     fetch("http://localhost:5000/single-schedule", {
       method: "POST",
@@ -60,17 +66,29 @@ const Individuals = () => {
          md:w-full w-3/4 mx-auto"
         >
           <div className="form-control w-full max-w-xs my-5">
-            <h1 className="text-lg font-bold text-center text-emerald-600 mb-8">
+            <h1 className="text-lg font-bold text-center text-emerald-600 mb-5">
               Meeting Schedule Time {date}
             </h1>
             <input
               required
               name="meetingCategory"
               placeholder="Enter Your Meeting Category"
-              className="input input-bordered w-full max-w-xs my-5"
+              className="input input-bordered w-full max-w-xs mb-5"
               type="text"
             />
-            <select name="select" className="select select-bordered" required>
+
+            <textarea
+              className="textarea textarea-bordered mb-5"
+              name="meetingDescription"
+              placeholder="Meeting Description"
+              required
+            ></textarea>
+
+            <select
+              name="select"
+              className="select select-bordered mb-0"
+              required
+            >
               <option value="10am - 11:00am">10am - 11:00am</option>
               <option value="11am - 12:00am">11am - 12:00am</option>
               <option value="12am - 01:00am">12am - 01:00am</option>
@@ -86,10 +104,10 @@ const Individuals = () => {
               name="email"
               required
               placeholder="Enter Your Meeting Partner Email"
-              className="input input-bordered w-full max-w-xs my-5"
+              className="input input-bordered w-full max-w-xs mb-5"
             />
           </div>
-          <div className="btn text-xl border-none w-full max-w-xs my-5 bg-emerald-400 hover:bg-emerald-600">
+          <div className="btn text-xl border-none w-full max-w-xs bg-emerald-400 hover:bg-emerald-600">
             <input type="submit" value="Submit" />
           </div>
         </form>

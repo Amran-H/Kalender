@@ -1,7 +1,7 @@
 import React from "react";
 
 const ScheduleItem = ({ card }) => {
-  const { _id, img, icon, name, body, list1, list2, list3 } = card;
+  const { img, icon, name, body, list1, list2, list3 } = card;
   return (
     <div
       className="flex flex-col-reverse  lg:flex-row items-center justify-between text-base mb-8 md:border-none lg:border-none 
