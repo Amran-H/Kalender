@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { format } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import { toast } from "react-hot-toast";
+import { AuthContext } from "../../contexts/AuthProvider";
 
 const TeamsBooking = () => {
   const [selected, setSelected] = useState(new Date());
   const [email, setEmail] = useState([]);
+  const { user } = useContext(AuthContext);
 
   const date = format(selected, "PP");
 
@@ -14,14 +16,19 @@ const TeamsBooking = () => {
 
   const handleBooking = (data, i) => {
     data.preventDefault();
+    const hostEmail = user?.email;
     const form = data.target;
     const time = form.select.value;
     const teamCategory = form.teamCategory.value;
+    const meetingDescription = form.meetingDescription.value;
+
     const booking = {
+      hostEmail,
       date,
       time,
       email,
       teamCategory,
+      meetingDescription,
     };
 
     fetch("http://localhost:5000/multi-schedule", {
@@ -78,6 +85,9 @@ const TeamsBooking = () => {
           className="md:ml-10 lg:ml-20 lg:w-full
           md:w-full w-3/4 mx-auto"
         >
+          <h1 className="text-lg font-bold text-center text-emerald-600 mb-5">
+            Meeting Schedule Time {date}
+          </h1>
           <input
             required
             name="teamCategory"
@@ -85,7 +95,15 @@ const TeamsBooking = () => {
             className="input input-bordered w-full max-w-xs my-5"
             type="text"
           />
-          <div className="form-control w-full max-w-xs my-5">
+          <br />
+          <textarea
+            className="textarea textarea-bordered w-full max-w-xs mb-5"
+            name="meetingDescription"
+            placeholder="Meeting Description"
+            required
+          ></textarea>
+
+          <div className="form-control w-full max-w-xs mb-5">
             <select name="select" className="select select-bordered " required>
               <option value="10am - 11:00am">10am - 11:00am</option>
               <option value="11am - 12:00am">11am - 12:00am</option>
@@ -100,15 +118,14 @@ const TeamsBooking = () => {
             <div>
               {email.map((data, i) => {
                 return (
-                  <div className="flex items-center">
-                    <h1 className="hidden">{data}</h1>
+                  <div className="flex items-center mb-5">
                     <input
                       type="email"
                       name="email"
                       required
                       onBlur={(e) => handleEmail(e, i)}
                       placeholder="Enter Your Meeting Partner Email"
-                      className="input input-bordered w-full max-w-xs my-5 rounded-r-none"
+                      className="input input-bordered w-full max-w-xs  rounded-r-none"
                     />
                     <button
                       onClick={() => handleDelete(i)}
